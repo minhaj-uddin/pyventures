@@ -1,0 +1,14 @@
+{
+  "1001": {
+    "account_number": "1001",
+    "pin": "f1f4b0e949990b31335277900f3fb84202ec0887d41f7ae7d3dc996758507c83",
+    "balance": 100.0,
+    "transaction_history": [
+      {
+        "type": "Deposit",
+        "amount": 100.0,
+        "time": "2025-06-13 12:47:55"
+      }
+    ]
+  }
+}

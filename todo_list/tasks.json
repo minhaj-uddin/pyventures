@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Buy Groceries",
+    "completed": true
+  },
+  {
+    "description": "Record Memories",
+    "completed": false
+  }
+]

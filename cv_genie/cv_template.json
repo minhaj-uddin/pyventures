@@ -1,0 +1,48 @@
+{
+  "name": "John Doe",
+  "image": "profile.jpg",
+  "contact": {
+    "email": "johndoe@example.com",
+    "linkedin": "linkedin.com/in/johndoe"
+  },
+  "bio": "A dedicated software engineer with over 5 years of experience in building scalable applications. Passionate about problem-solving, continuous learning, and open-source contributions.",
+  "education": [
+    {
+      "degree": "BSc Computer Science",
+      "university": "XYZ University",
+      "year": "2018"
+    },
+    {
+      "degree": "MSc Software Engineering",
+      "university": "ABC University",
+      "year": "2021"
+    }
+  ],
+  "work_experience": [
+    {
+      "title": "Software Engineer",
+      "company": "TechCorp",
+      "years": "2021-Present",
+      "responsibilities": [
+        "Developing enterprise-level web applications",
+        "Collaborating with cross-functional teams",
+        "Leading the migration to cloud infrastructure"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "WebWorks",
+      "years": "2018-2021",
+      "responsibilities": [
+        "Contributed to the development of e-commerce platforms",
+        "Optimized database queries for performance improvement"
+      ]
+    }
+  ],
+  "skills": ["Python", "Django", "JavaScript", "React"],
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "Certified Kubernetes Administrator",
+    "Google Cloud Professional Developer"
+  ]
+}

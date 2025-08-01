@@ -1,0 +1,83 @@
+{
+    "geography": [
+        {
+            "QUESTION": "What is the capital of France?",
+            "OPTIONS": ["A. Berlin", "B. Madrid", "C. Paris", "D. Rome"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "Which country has the most population?",
+            "OPTIONS": ["A. USA", "B. China", "C. India", "D. Russia"],
+            "ANSWER": "B"
+        },
+        {
+            "QUESTION": "What river flows through Egypt?",
+            "OPTIONS": ["A. Amazon", "B. Mississippi", "C. Nile", "D. Danube"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "Which continent is known as the 'Dark Continent'?",
+            "OPTIONS": ["A. Africa", "B. Asia", "C. Europe", "D. Australia"],
+            "ANSWER": "A"
+        },
+        {
+            "QUESTION": "What is the largest ocean on Earth?",
+            "OPTIONS": ["A. Atlantic", "B. Indian", "C. Arctic", "D. Pacific"],
+            "ANSWER": "D"
+        }
+    ],
+    "science": [
+        {
+            "QUESTION": "Which planet is known as the red planet?",
+            "OPTIONS": ["A. Earth", "B. Mars", "C. Jupiter", "D. Saturn"],
+            "ANSWER": "B"
+        },
+        {
+            "QUESTION": "What gas do plants absorb from the atmosphere?",
+            "OPTIONS": ["A. Oxygen", "B. Nitrogen", "C. Carbon Dioxide", "D. Hydrogen"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "What is H2O commonly known as?",
+            "OPTIONS": ["A. Salt", "B. Oxygen", "C. Water", "D. Hydrogen"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "How many legs does an insect have?",
+            "OPTIONS": ["A. Four", "B. Six", "C. Eight", "D. Ten"],
+            "ANSWER": "B"
+        },
+        {
+            "QUESTION": "What part of the plant conducts photosynthesis?",
+            "OPTIONS": ["A. Roots", "B. Stem", "C. Leaves", "D. Flowers"],
+            "ANSWER": "C"
+        }
+    ],
+    "history": [
+        {
+            "QUESTION": "Who was the first President of the United States?",
+            "OPTIONS": ["A. Thomas Jefferson", "B. George Washington", "C. Abraham Lincoln", "D. John Adams"],
+            "ANSWER": "B"
+        },
+        {
+            "QUESTION": "In which year did World War II end?",
+            "OPTIONS": ["A. 1940", "B. 1945", "C. 1939", "D. 1950"],
+            "ANSWER": "B"
+        },
+        {
+            "QUESTION": "Which ancient civilization built the pyramids?",
+            "OPTIONS": ["A. Romans", "B. Greeks", "C. Egyptians", "D. Persians"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "Who discovered America in 1492?",
+            "OPTIONS": ["A. Vasco da Gama", "B. Marco Polo", "C. Christopher Columbus", "D. Ferdinand Magellan"],
+            "ANSWER": "C"
+        },
+        {
+            "QUESTION": "What wall fell in 1989, symbolizing the end of the Cold War?",
+            "OPTIONS": ["A. Great Wall of China", "B. Berlin Wall", "C. Hadrian Wall", "D. Wall of Babylon"],
+            "ANSWER": "B"
+        }
+    ]
+}

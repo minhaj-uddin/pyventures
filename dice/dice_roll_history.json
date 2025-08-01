@@ -1,0 +1,13 @@
+{
+  "total_rolls": 1,
+  "total_dice_rolled": 3,
+  "total_dice_sum": 19,
+  "total_dice_avg": 6.33,
+  "roll_history": [
+    [
+      [5, 2],
+      [4, 4],
+      [3, 1]
+    ]
+  ]
+}
