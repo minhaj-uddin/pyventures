@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live Stock Ticker</title>
+  </head>
+  <body>
+    <h1>📈 Live Stock Prices</h1>
+    <ul id="stock-prices"></ul>
+
+    <script>
+      const eventSource = new EventSource("/sse");
+      const stockList = document.getElementById("stock-prices");
+
+      eventSource.onmessage = function (event) {
+        const li = document.createElement("li");
+        li.textContent = event.data;
+        stockList.prepend(li);
+
+        // Keep the list to 10 items max
+        if (stockList.children.length > 10) {
+          stockList.removeChild(stockList.lastChild);
+        }
+      };
+
+      eventSource.onerror = function (err) {
+        console.error("SSE error", err);
+        eventSource.close();
+      };
+    </script>
+  </body>
+</html>
