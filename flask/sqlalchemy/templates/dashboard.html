@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .dashboard {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .menu {
+        margin-top: 20px;
+      }
+      .menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .menu li {
+        background-color: #007bff;
+        color: white;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .menu li:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome, {{ current_user.username }} (Admin)</h1>
+    </header>
+
+    <div class="container">
+      <div class="dashboard">
+        <h2>Admin Dashboard</h2>
+        <p>
+          Here you can manage users, view logs, and perform other admin tasks.
+        </p>
+
+        <div class="menu">
+          <h3>Admin Actions</h3>
+          <ul>
+            <li>
+              <a href="{{ url_for('view_users') }}" style="color: white"
+                >View All Users</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('manage_roles') }}" style="color: white"
+                >Manage User Roles</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('view_logs') }}" style="color: white"
+                >View Logs</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('logout') }}" style="color: white">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
