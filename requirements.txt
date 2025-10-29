@@ -8,6 +8,7 @@ Flask-JWT-Extended==4.7.1
 Flask-Login==0.6.3
 Flask-Migrate==4.1.0
 Flask-SQLAlchemy==3.1.1
+Flask-WTF==1.2.2
 folium==0.20.0
 fpdf2==2.8.3
 gTTS==2.5.4
@@ -31,3 +32,4 @@ scapy==2.6.1
 SpeechRecognition==3.14.3
 textblob==0.19.0
 wikipedia==1.4.0
+WTForms==3.2.1
