@@ -1,0 +1,82 @@
+"""
+GraphQL Schema for Store, Item, Tag, and User models
+"""
+type Store {
+  id: ID!
+  name: String!
+  items: [Item!]
+  tags: [Tag!]
+}
+
+type Item {
+  id: ID!
+  name: String!
+  description: String
+  price: Float!
+  store: Store!
+  tags: [Tag!]
+}
+
+type Tag {
+  id: ID!
+  name: String!
+  store: Store!
+  items: [Item!]
+}
+
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  role: String!
+}
+
+type AuthResponse {
+  accessToken: String!
+  refreshToken: String!
+}
+
+type Message {
+  message: String!
+}
+
+# ---------------- Queries ----------------
+type Query {
+  stores: [Store!]
+  store(id: ID!): Store
+  items: [Item!]
+  item(id: ID!): Item
+  tags: [Tag!]
+  tag(id: ID!): Tag
+  users: [User!]
+  user(id: ID!): User
+}
+
+# ---------------- Mutations ----------------
+type Mutation {
+  createStore(name: String!): Store!
+  deleteStore(id: ID!): Message!
+
+  createItem(
+    name: String!
+    description: String
+    price: Float!
+    storeId: ID!
+  ): Item!
+  updateItem(id: ID!, name: String, price: Float): Item!
+  deleteItem(id: ID!): Message!
+
+  createTag(storeId: ID!, name: String!): Tag!
+  deleteTag(id: ID!): Message!
+  linkItemTag(itemId: ID!, tagId: ID!): Tag!
+  unlinkItemTag(itemId: ID!, tagId: ID!): Message!
+
+  registerUser(
+    username: String!
+    email: String!
+    password: String!
+    role: String
+  ): Message!
+  login(username: String!, password: String!): AuthResponse!
+  refreshToken: AuthResponse!
+}
